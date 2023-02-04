@@ -1,0 +1,11 @@
+.btn-in {
+    position: absolute;
+    top: 10%;
+    right: 1%;
+
+    height: 80%;
+}
+
+    .btn-in:active {
+        transform: translateY(2px);
+    }

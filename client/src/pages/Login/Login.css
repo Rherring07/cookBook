@@ -1,0 +1,76 @@
+/* .container-hero {
+    height: 80vh;
+}
+
+.message {
+    color: red;
+}
+
+.login-container,
+.signup-container {
+    --blue-background: #4696e5;
+
+    width: 20rem;
+
+    margin: 1rem auto;
+    padding: 1.5rem 2rem;
+
+    border: 1px solid rgb(219,219,219);
+    background: white;
+
+    gap: 0.5rem;
+}
+   
+    .logo-container {
+        min-height: 3rem;
+    }
+        .logo {
+            font-size: 1.5rem;
+        }
+    
+    .login-span {
+        min-height: 2rem;
+        margin-right: auto;
+    }
+
+
+.login-form-container {
+    width: 100%;
+}
+
+.btn {
+    border-radius: 2px;
+}
+
+
+.login-button {
+    margin-block: 1rem;
+    min-height: 1rem;
+    width: 100%;
+
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.signup-button {
+    padding: 0.3rem 0.5rem;
+}
+
+.form-container {
+    gap: 0.5rem;
+}
+
+
+.login-form { 
+    position: relative;
+
+    width: 100%;
+
+    padding: .6rem 0 .5rem .55rem;
+
+    border: 1px solid rgb(219,219,219);
+    background-color: var(--bs-gray-200);
+} */
+.w-40 {
+    width: 40%;
+}

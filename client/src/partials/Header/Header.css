@@ -1,0 +1,30 @@
+/* colors  */
+/* .header-container {
+    --blue-button: #0095f6;
+
+    --bs-gray-500: #adb5bd;
+} */
+
+
+/* layout */
+ .header-container {
+    min-height: 9rem;
+
+}
+
+.h-6r {
+    height: 6rem;
+}
+/*
+.logo {
+    margin-right: auto;
+}
+
+.header-link {
+    text-decoration: none;
+    color: black;
+}
+
+    .header-link:hover {
+        color: white;
+    } */

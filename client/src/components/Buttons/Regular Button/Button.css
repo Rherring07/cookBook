@@ -1,0 +1,12 @@
+/* Colors */ 
+.btn {
+    --text-white: #ffffff;
+    --blue-button: #0095f6;
+}
+/* Utility Classes */
+.btn-disabled {
+    background-color: #ccc!important; 
+    cursor: not-allowed!important;
+}
+
+/* layout */
