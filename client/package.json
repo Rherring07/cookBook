@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "http://localhost:2121",
+  "proxy": "eval $(grep '^VITE_PROXY' .env)",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
