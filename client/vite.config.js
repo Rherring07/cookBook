@@ -15,7 +15,7 @@ export default defineConfig({
     port : 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:2121',
+        target: 'https://cookbook-production-9625.up.railway.app/',
         changeOrigin: true,
         secure: false,
       } 
