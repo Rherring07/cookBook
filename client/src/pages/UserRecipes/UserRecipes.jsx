@@ -71,13 +71,13 @@ const userRecipes = ({user, setUser}) => {
           </div>
 
           <div className = 'col d-flex align-items-center justify-content-end mt-4'>
-              
+              { user.userName === params.userName &&
               <Button 
                 className = 
                 'create-recipe-button btn-sm btn-outline-info'
                 text = "Create a Recipe" 
                 onClick = {navigateToCreateRecipe} 
-                />
+                /> }
 
           </div>
 

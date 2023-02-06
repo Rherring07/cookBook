@@ -32,7 +32,6 @@ const CreateRecipe = ({user}) => {
   const appendImage = async (e, file) => {
     e.preventDefault();
     imageData.append('file', file)
-    console.log(imageData.get('file'))
     setFile(file);
   }
 
@@ -65,7 +64,6 @@ const CreateRecipe = ({user}) => {
 
     }
 
-    console.log(formData)
   }
 
 
@@ -100,10 +98,6 @@ const CreateRecipe = ({user}) => {
     setMessage('');
 
     imageData.append('formData', JSON.stringify(formData));
-    for (const pair of imageData.entries()) {
-      console.log(`${pair[0]}, ${pair[1]}`);
-    }
-    console.log(imageData.get('file'));
     // Posts recipe data to server, server checks for authentication,
     // returns status 
     const res = await fetch("/api/recipes", {

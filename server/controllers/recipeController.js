@@ -116,7 +116,6 @@ module.exports = {
                 { $addToSet: {'likedRecipes': recipe._id} }
             );
             // const user = await User.findById(req.user.id)
-            console.log(user)
             console.log("Likes +1");
             res.status(200).send([user, recipe])
             } catch (err) {
@@ -144,7 +143,7 @@ module.exports = {
                 { $pull: {'likedRecipes': recipe._id} }
             )
             console.log("Likes -1");
-            console.log(user)
+
             res.status(200).send([user,recipe])
             } catch (err) {
             console.log(err);
@@ -187,7 +186,7 @@ module.exports = {
 
            
             console.log("Removed from Bookmarks");
-            console.log(recipe)
+  
             res.status(200).send(user)
             } catch (err) {
             console.log(err);
@@ -200,7 +199,7 @@ module.exports = {
             const recipe = await Recipe.findById(req.params.id);
             console.log(recipe);
             // Delete image from cloudinary
-            await cloudinary.uploader.destroy(post.cloudinaryId);
+            await cloudinary.uploader.destroy(recipe.cloudinaryId);
             // delete from user
             await User.findOneAndUpdate(
                 { userName: req.user.userName },
