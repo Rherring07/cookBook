@@ -155,7 +155,7 @@ const Recipe = ({recipe, user, setUser, deleteRecipe}) => {
             {(location.pathname !== `/recipe/${recipe._id}`) &&
                 <div className = "nav-button-div p-3 col-6">
                     <Button 
-                    className = 'navigate-btn btn-outline-primary' 
+                    className = 'navigate-btn btn-outline-primary btn-sm' 
                     text = 'View Recipe' 
                     onClick = {navigateToRecipe}></Button>
                 </div>
@@ -166,7 +166,7 @@ const Recipe = ({recipe, user, setUser, deleteRecipe}) => {
                 ? <div className = "nav-button-div p-3 col-6 text-end">
                     <Button 
                         key = {`${recipe._id}-delete-button`} 
-                        className = 'delete-recipe-button btn-outline-danger navigate-btn' 
+                        className = 'delete-recipe-button btn-outline-danger navigate-btn btn-sm' 
                         text = 'Delete Recipe'
                         onClick = {() => deleteRecipe(recipe._id)} 
                         />
@@ -242,12 +242,11 @@ const Recipe = ({recipe, user, setUser, deleteRecipe}) => {
                                 text = 'Like' 
                                 onClick = { () => likeRecipe(recipe._id) }
                             />
-                            <div className = 'position-absolute col-12 top-0'>
+                            <div className = {`position-absolute col-12 top-0  ${likeVisibility} `}>
                                 <Button 
                                     key = {`${recipe._id}-unlike-button`} 
                                     className = 
                                         {`unlike-recipe-button 
-                                        ${likeVisibility} 
                                         btn-success 
                                         w-90`}  
                                     text = 'Liked' 
@@ -272,12 +271,11 @@ const Recipe = ({recipe, user, setUser, deleteRecipe}) => {
                             onClick = { () => bookmarkRecipe(recipe._id) }
                         />
 
-                        <div className = 'position-absolute col-12 top-0'>
+                        <div className = {`position-absolute col-12 top-0  ${bookmarkVisibility}  `}>
                             <Button 
                                 key = {`${recipe._id}-unBookmark-button`} 
                                 className = 
                                 {`unBookmark-recipe-button 
-                                ${bookmarkVisibility}  
                                 btn-success w-90`} 
                                 text = {<img src = {bookmarkUrl} alt = 'bookmark' />}
                                 onClick = { () => unBookmarkRecipe(recipe._id) }
@@ -289,7 +287,7 @@ const Recipe = ({recipe, user, setUser, deleteRecipe}) => {
             <div className = 'container col-sm-1'></div>
 
             {/* RIGHT SIDE - Recipe Information */}
-            <div className = 'col 6 px-5 grid col row-cols-2'> 
+            <div className = 'col 6 m-auto grid col row-cols-2'> 
 
                 {/* Ingredients */}
                 <div className = 'pb-5'>

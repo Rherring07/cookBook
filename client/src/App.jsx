@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import Header from "./partials/Header/Header"
+import Footer from "./partials/Footer/Footer"
 import Home from "./pages/Home/Home"
 import Login from "./pages/Login/Login"
 import Profile from './pages/Profile/Profile'
@@ -44,13 +45,13 @@ const App = () => {
   }, [user])
 
   return (
-    <div className = {`vh-100 ${isLoggedIn === false && 'w-80 m-auto'}`}>
+    <div className = {`${isLoggedIn === false && 'm-auto'}`}>
         
         <Router>
 
           <Header title = "Recipe Uploader" isLoggedIn = {isLoggedIn} setLoggedIn = {setLoggedIn} user = {user} setUser = {setUser}/>
 
-
+          <div className = 'w-80 m-auto'>
             <Routes>
                 <Route path = "/" element = {<Home setUser = {setUser} setLoggedIn = {setLoggedIn}/>} />
                 <Route path = "/signup" element = {<SignUp />} />
@@ -63,9 +64,9 @@ const App = () => {
                 <Route path = "/recipe/:id" element = {<Recipe user = {user} setUser = {setUser}/>} />
                 <Route path = '/profile/:userName/bookmarked_recipes' element = {<Bookmarked_Recipes user = {user} setUser = {setUser}/>} />
             </Routes>
-
+          </div>
      
-
+          <Footer />
             
         </Router>
     

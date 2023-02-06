@@ -176,7 +176,7 @@ const CreateRecipe = ({user}) => {
             <label htmlFor = 'prepTime' className = 'form-label'> Prep Time </label>
             {/* prep hours */}
             <div className = 'row'>
-              <div className = 'col-2'>
+              <div className = 'col-3'>
                 <Input 
                   className = 'form-control prepTime' 
                   id = "prepTime-hours" 
@@ -186,10 +186,10 @@ const CreateRecipe = ({user}) => {
                 />
               </div>
              
-              <label htmlFor = 'hours' className = 'form-label col-2 mt-2'> Hours </label>
+              <label htmlFor = 'hours' className = 'form-label col-2 p-0 mt-2'> Hours </label>
 
               {/* prep minutes */}
-              <div className = 'col-2'>
+              <div className = 'col-3'>
                 <Input 
                   className = 'form-control prepTime' 
                   id = "prepTime-minutes" 
@@ -199,7 +199,7 @@ const CreateRecipe = ({user}) => {
                 />
               </div>
 
-              <label htmlFor = 'minutes' className = 'form-label col mt-2'> Minutes </label>
+              <label htmlFor = 'minutes' className = 'form-label col-2 p-0 mt-2'> Minutes </label>
 
             </div> 
           </div>    
@@ -209,7 +209,7 @@ const CreateRecipe = ({user}) => {
             <label htmlFor = 'cookTime' className = 'form-label'> Cook Time </label>
             {/* cook hours */}
             <div className = 'row'>
-              <div className = 'col-2'>
+              <div className = 'col-3'>
                 <Input 
                   className = 'form-control cookTime' 
                   id = "cookTime-hours" 
@@ -219,10 +219,10 @@ const CreateRecipe = ({user}) => {
                 />
               </div>
 
-              <label htmlFor = 'hours' className = 'form-label col-2 mt-2'> Hours </label>
+              <label htmlFor = 'hours' className = 'form-label col-2 p-0 mt-2'> Hours </label>
 
             {/* cook minutes */}
-              <div className = 'col-2'>
+              <div className = 'col-3'>
                 <Input 
                   className = 'form-control cookTime' 
                   id = "cookTime-minutes" 
@@ -232,7 +232,7 @@ const CreateRecipe = ({user}) => {
                 />
               </div>
 
-              <label htmlFor = 'minutes' className = 'form-label col mt-2'> Minutes </label>
+              <label htmlFor = 'minutes' className = 'form-label col mt-2 p-0'> Minutes </label>
 
             </div> 
           </div>    

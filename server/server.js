@@ -67,15 +67,6 @@ app.use(flash());
 app.use('/api', mainRoutes);
 app.use('/api/recipes', recipeRoutes);
 
-if (process.env.NODE_EV === 'production') {
-  // Set Static Folder
-  app.use(express.static('client/dist'));
-
-  app.get('*', (req,res) => {
-    res.sendFile(path.resolve(_dirname, 'client', 'dist', 'index.html'))
-  });
-}
-
 //Server Running
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${port}`);

@@ -68,7 +68,7 @@ const Header = ({title, isLoggedIn, setLoggedIn, user, setUser}) => {
 
   return (
     // {/* HEADER CONTAINER */}
-    <div className = 'header-container py-3 header static-top bg-white'>
+    <div className = 'header-container py-3 header static-top bg-white row col-lg-10 col-md-11 col-12-sm m-auto'>
     <Navbar className = 'h-100' collapseOnSelect expand="md" variant="light">
 
       
@@ -77,7 +77,7 @@ const Header = ({title, isLoggedIn, setLoggedIn, user, setUser}) => {
         <div className = 'h-6r'>
           <Navbar.Brand> 
             <Link className = "navbar-brand d-flex align-items-center h-100" 
-                  to = {isLoggedIn ? '/feed' : '/'}> <img className = 'w-100 h-80' src = {Logo} alt = 'logo'></img>
+                  to = {isLoggedIn ? '/feed' : '/'}> <img className = 'w-80 h-80' src = {Logo} alt = 'logo'></img>
             </Link>
           </Navbar.Brand>
         </div>

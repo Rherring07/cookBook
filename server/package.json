@@ -1,6 +1,9 @@
 {
   "name": "binary-upload-boom-react",
   "version": "1.0.0",
+  "engines": {
+    "node": "v18.11.0"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -8,7 +11,7 @@
     "client": "npm run dev --prefix ../client",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
-    "build": "npm run build --prefix ../client",
+    "build": "npm run build",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
@@ -19,7 +22,7 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
-    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "cloudinary": "^1.33.0",
     "colors": "^1.4.0",
     "connect-mongo": "^4.6.0",

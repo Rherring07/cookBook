@@ -53,7 +53,7 @@ const Home = ({setUser, setLoggedIn}) => {
     return (
         <div className = 'container  mt-5 pt-5 h-40 px-0'>  
 
-            <div className = 'title-container row flex-lg-row-reverse align-items-center h-400px'>
+            <div className = 'title-container row flex-lg-row-reverse align-items-center'>
 
                 <div className="image title-image col-12 col-lg-6 col-md-10 h-100">
                     <div className="inner h-100">

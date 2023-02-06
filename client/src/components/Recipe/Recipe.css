@@ -74,8 +74,13 @@
 .w-90 {
     width: 86%;
 }
+
+
+
 /* GENERAL LAYOUT */
 .like-button-container,
 .bookmark-button-container {
     position: relative;
 }
+
+
