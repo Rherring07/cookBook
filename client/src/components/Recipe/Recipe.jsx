@@ -223,7 +223,7 @@ const Recipe = ({recipe, user, setUser, deleteRecipe}) => {
             
             {/* LEFT SIDE */}
             <div className = 'container col-sm-1'></div>
-            <div className = 'col-lg-5 col-md-8 col-sm-10 pb-5'>
+            <div className = 'col-lg-5 col-md-8 col-sm-10 pb-5 mh-400px'>
                  {/* Image  */}
                 <img className="w-100 h-80" src = {recipe.image} alt = 'image'></img>
 
@@ -290,7 +290,7 @@ const Recipe = ({recipe, user, setUser, deleteRecipe}) => {
             <div className = 'col 6 m-auto grid col row-cols-2'> 
 
                 {/* Ingredients */}
-                <div className = 'pb-5'>
+                <div className = 'pb-5 col-12'>
                     <p className = 'fs-2 text-decoration-underline'>Ingredients </p>
                     {/* For each ingredient, add a new line and a number */}
                     {recipe.ingredients.map( (item, index) => (
@@ -303,7 +303,7 @@ const Recipe = ({recipe, user, setUser, deleteRecipe}) => {
                 </div>
                 
                 {/* Directions */}
-                <div className = 'pb-5'>
+                <div className = 'pb-5 col-12'>
                     <p className = 'fs-2 text-decoration-underline'> Directions </p>
 
                      {/* For each step, add a new line and a number */}

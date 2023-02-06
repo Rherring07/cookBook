@@ -75,7 +75,9 @@
     width: 86%;
 }
 
-
+.mh-400px {
+    max-height: 500px;
+}
 
 /* GENERAL LAYOUT */
 .like-button-container,
