@@ -73,8 +73,14 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
-
- A simple fullstack web application where users can log in, upload their recipes, and like and bookmark other users' recipes.
+ 
+ I very much enjoy cooking in my free time. I've worked in and out of kitchens as a sous chef and pizza chef for a majortiy of my life
+ and have accumulated many cool bits of knowledge and recipes over time. I wanted to make a place to store them, and share them with
+ family members or friends, as well as save my grandparent's recipes to use down the road. So I made this app.
+ 
+ CookBook is a simple fullstack web application made to store recipes. Users will be able to log in and upload their recipes, as well as 
+ explore, like, and bookmark other user recipes. Options to search, organize recipes by criteria such as type of food, country of origin, or 
+ allergen specific, and other quality of life options will be implemented in the future.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
