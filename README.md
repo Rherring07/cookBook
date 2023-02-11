@@ -32,7 +32,7 @@ Fullstack App where users can upload recipes and share with others, as well as l
 <h3 align="center">project_title</h3>
 
   <p align="center">
-    project_description
+    A fullstack web application where users can log in, upload their recipes, and like and bookmark other users' recipes
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
