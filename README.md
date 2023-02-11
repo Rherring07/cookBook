@@ -88,12 +88,11 @@
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![MongoDB][React.js]][React-url]
+<!-- * [![MongoDB][React.js]][React-url] -->
 * [![ExpressJS][ExpressJS]][Express-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
