@@ -34,14 +34,10 @@ Fullstack App where users can upload recipes and share with others, as well as l
   <p align="center">
     A fullstack web application where users can log in, upload their recipes, and like and bookmark other users' recipes
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Rherring07/cookBook"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://cookbook-production-5a06.up.railway.app/">View Demo</a>
   </p>
 </div>
 
