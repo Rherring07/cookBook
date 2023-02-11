@@ -74,7 +74,7 @@ Fullstack App where users can upload recipes and share with others, as well as l
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[product-screenshot]](https://cookbook-production-5a06.up.railway.app/)
+[!Produce-Name-Screenshot[product-screenshot]](https://cookbook-production-5a06.up.railway.app/)
 
  A simple fullstack web application where users can log in, upload their recipes, and like and bookmark other users' recipes.
 
