@@ -1,5 +1,3 @@
-# cookBook
-Fullstack App where users can upload recipes and share with others, as well as like and bookmark other recipes
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -29,10 +27,10 @@ Fullstack App where users can upload recipes and share with others, as well as l
     <img src="./client/src/partials/Header/images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">CookBook</h3>
 
   <p align="center">
-    A fullstack web application where users can log in, upload their recipes, and like and bookmark other users' recipes
+    Breathing Life into Cooking through Collaboration
     <br />
     <a href="https://github.com/Rherring07/cookBook"><strong>Explore the docs »</strong></a>
     <br />
