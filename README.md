@@ -86,8 +86,7 @@ Fullstack App where users can upload recipes and share with others, as well as l
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Vite][Vite.js]][Vite-url]
-* [![Express][Expressjs.com]][Expressjs-url]
+* [![Expressjs][Expressjs.com]][Expressjs-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
