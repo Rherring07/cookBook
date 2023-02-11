@@ -91,7 +91,7 @@
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![MongoDB][React.js]][React-url]
-* [![Express][Expressjs.com]][Express-url]
+* [![ExpressJS][ExpressJS]][Express-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
@@ -218,4 +218,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [ExpressJS]: https://img.shields.io/badge/ExpressJS-0769AD?style=for-the-badge&logo=express&logoColor=white
-[express-url]: https://expressjs.com
+[ExpressJS-url]: https://expressjs.com
