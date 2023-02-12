@@ -89,8 +89,11 @@
 ### Built With
 
 * [![React][React.js]][React-url]
-<!-- * [![MongoDB][React.js]][React-url] -->
+* [![Node][Node.js]][Node-url]
 * [![ExpressJS][ExpressJS]][ExpressJS-url]
+* [![MongoDB][MongoDB]][MongoDB-url]
+* [![Mongoose][Mongoose]][Mongoose-url]
+* [![Passport][Passport]][Passport-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 
@@ -218,3 +221,11 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Bootstrap-url]: https://getbootstrap.com
 [ExpressJS]: https://img.shields.io/badge/ExpressJS-0769AD?style=for-the-badge&logo=express&logoColor=white
 [ExpressJS-url]: https://expressjs.com
+[Node]: https://img.shields.io/badge/Node-FF2D20?style=for-the-badge&logo=node&logoColor=white
+[Node-url]: https://nodejs.org/
+[MongoDB]: https://img.shields.io/badge/MongoDB-4A4A55?style=for-the-badge&logo=mongoDB&logoColor=FF3E00
+[MongoDB-url]: https://www.mongodb.com/
+[Mongoose]: https://img.shields.io/badge/Mongoose-DD0031?style=for-the-badge&logo=mongoose&logoColor=white
+[Mongoose-url]: https://mongoosejs.com/
+[Passport]: https://img.shields.io/badge/Passport-35495E?style=for-the-badge&logo=passport&logoColor=4FC08D
+[Passport-url]: https://www.passportjs.org/
