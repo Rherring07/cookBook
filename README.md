@@ -89,7 +89,7 @@
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Node][Node.js]][Node-url]
+* [![Node][Node]][Node-url]
 * [![ExpressJS][ExpressJS]][ExpressJS-url]
 * [![MongoDB][MongoDB]][MongoDB-url]
 * [![Mongoose][Mongoose]][Mongoose-url]
