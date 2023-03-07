@@ -104,33 +104,36 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Feel free to clone and/or download this repo to tweek, edit, or do whatever with. 
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+In order to run this code locally, you will need your own MongoDB, cloudinary, and set a few 
+variables in a process.env folder
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Rherring07/cookBook.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+3. Create a process.env file in the source folder of the client side, and add these variables
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   PORT = /* port of your choice */;
+   VITE_PROXY = 'http://localhost:' /* your port */
    ```
-
+4. In the config folder on the server side, add a process.env file and add these variables
+   ```js
+   PORT = /* your port */
+   DB_STRING = /* your MongoDB DB String */
+   CLOUD_NAME = /* cloudinary name */
+   API_KEY = /* cloudinary API Key */
+   API_SECRET = /* cloudinary API secret */
+   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -159,53 +162,15 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Ryan Herrington - [@RHerring07](https://twitter.com/Rherring07) - Herrington.Ryan.P@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
+Project Link: [https://github.com/Rherring07/cookBook](https://github.com/Rherring07/cookBook)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
