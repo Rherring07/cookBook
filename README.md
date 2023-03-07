@@ -104,7 +104,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Feel free to clone and/or download this repo to tweek, edit, or do whatever with. 
+Feel free to clone and/or download this repo to tweak, edit, or do whatever with. 
 
 ### Prerequisites
 
