@@ -13,8 +13,8 @@ const flash = require("express-flash");
 //logger
 const logger = require("morgan");
 // Routes 
-const recipeRoutes = require('./routes/recipes')
-const mainRoutes = require('./routes/main')
+const recipeRoutes = require('./server/routes/recipes')
+const mainRoutes = require('./server/routes/main')
 // Running build
 const path = require('path')
 
@@ -65,7 +65,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 // Passport config
-require("./config/passport")(passport);
+require("./server/config/passport")(passport);
 
 //Use flash messages for errors, info, ect...
 app.use(flash());
