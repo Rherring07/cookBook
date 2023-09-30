@@ -7,7 +7,7 @@
   "scripts": {
     "start": "vite build",
     "dev": "vite",
-    "build": "npm insall && vite build",
+    "build": "npm install && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
