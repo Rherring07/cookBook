@@ -29,8 +29,6 @@ const port = process.env.PORT || 5000;
 // Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
 
-// Connect To Database
-connectDB();
 
 
 //Body Parsing
@@ -67,8 +65,10 @@ app.use(flash());
 app.use('/api', mainRoutes);
 app.use('/api/recipes', recipeRoutes);
 
-//Server Running
-app.listen(process.env.PORT, () => {
-    console.log(`Server is running on port ${port}`);
-  });
+//Connect to DB before Server Running
+connectDB().then(() => {
+  app.listen(process.env.PORT, () => {
+      console.log(`Server is running on port ${port}`);
+    });
+})
   
