@@ -5,6 +5,7 @@
   "type": "module",
   "proxy": "eval $(grep '^VITE_PROXY' .env)",
   "scripts": {
+    "start": "vite build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
