@@ -7,13 +7,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js --prefix ../server",
+    "start": "node server.js",
     "client": "npm run dev --prefix ../client",
     "client-build": "npm run build --prefix ../client",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
-    "build": "npm run build",
-    "group-build": "concurrently \"npm run server-build\" \"npm run client-build\"",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
