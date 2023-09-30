@@ -47,13 +47,6 @@ app.use(express.urlencoded({ extended: true }));
 //Logging
 app.use(logger("dev"));
 
-
-// Passport middleware
-app.use(passport.initialize());
-app.use(passport.session());
-// Passport config
-require("./server/config/passport")(passport);
-
 //Use flash messages for errors, info, ect...
 app.use(flash());
 
@@ -77,6 +70,12 @@ connectDB().then(() => {
   );
 
   
+  // Passport middleware
+  app.use(passport.initialize());
+  app.use(passport.session());
+  // Passport config
+  require("./server/config/passport")(passport);
+    
   app.listen(process.env.PORT, () => {
       console.log(`Server is running on port ${port}`);
     });
