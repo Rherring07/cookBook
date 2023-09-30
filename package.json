@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js --prefix ./server",
     "client-build": "npm run build --prefix ./client",
-    "build": "npm run client-build",
+    "build": "npm run client-build"
   },
   "keywords": [],
   "author": "",
