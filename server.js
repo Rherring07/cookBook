@@ -7,7 +7,7 @@ const mongoose = require("mongoose"); //
 const session = require("express-session");
 const MongoStore = require('connect-mongo');
 //connect database
-const connectDB = require("./config/db");
+const connectDB = require("../server/config/db");
 //notifications for validation (email is being used, etc)
 const flash = require("express-flash");
 //logger
