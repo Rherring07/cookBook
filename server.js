@@ -30,7 +30,7 @@ const port = process.env.PORT || 5000;
 require("dotenv").config({ path: "./config/.env" });
 
 //Cyclic Hosting Frontend and Backend
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "./client/dist")));
 app.get("*", function (_, res) {
   res.sendFile(
     path.join(__dirname, "./client/dist/index.html"),
