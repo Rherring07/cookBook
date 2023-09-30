@@ -12,7 +12,7 @@
     "client-build": "npm run build --prefix ./client",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
-    "server-build": "npm run build --prefix "./server",
+    "server-build": "npm run build --prefix ./server",
     "build": "concurrently \"npm run server-build\" \"npm run client-build\"",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
