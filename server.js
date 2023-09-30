@@ -50,10 +50,6 @@ app.use(logger("dev"));
 //Use flash messages for errors, info, ect...
 app.use(flash());
 
-//Setup Routes For Which The Server Is Listening
-app.use('/api', mainRoutes);
-app.use('/api/recipes', recipeRoutes);
-
 //Connect to DB before Server Running
 connectDB().then(() => {
   // Setup Sessions - stored in MongoDB
@@ -75,7 +71,11 @@ connectDB().then(() => {
   app.use(passport.session());
   // Passport config
   require("./server/config/passport")(passport);
-    
+
+  //Setup Routes For Which The Server Is Listening
+  app.use('/api', mainRoutes);
+  app.use('/api/recipes', recipeRoutes);
+  
   app.listen(process.env.PORT, () => {
       console.log(`Server is running on port ${port}`);
     });
