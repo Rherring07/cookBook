@@ -7,14 +7,14 @@ const mongoose = require("mongoose"); //
 const session = require("express-session");
 const MongoStore = require('connect-mongo');
 //connect database
-const connectDB = require("./config/db");
+const connectDB = require("./server/config/db");
 //notifications for validation (email is being used, etc)
 const flash = require("express-flash");
 //logger
 const logger = require("morgan");
 // Routes 
-const recipeRoutes = require('./routes/recipes')
-const mainRoutes = require('./routes/main')
+const recipeRoutes = require('./server/routes/recipes')
+const mainRoutes = require('./server/routes/main')
 // Running build
 const path = require('path')
 
@@ -30,10 +30,10 @@ const port = process.env.PORT || 5000;
 require("dotenv").config({ path: "./config/.env" });
 
 //Cyclic Hosting Frontend and Backend
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "./client/dist")));
 app.get("*", function (_, res) {
   res.sendFile(
-    path.join(__dirname, "./client/build/index.html"),
+    path.join(__dirname, "./client/dist/index.html"),
     function (err) {
       res.status(500).send(err);
     }
@@ -65,7 +65,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 // Passport config
-require("./config/passport")(passport);
+require("./server/config/passport")(passport);
 
 //Use flash messages for errors, info, ect...
 app.use(flash());
