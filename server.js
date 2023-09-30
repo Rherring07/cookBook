@@ -47,19 +47,6 @@ app.use(express.urlencoded({ extended: true }));
 //Logging
 app.use(logger("dev"));
 
-// Setup Sessions - stored in MongoDB
-app.use(
-  session({
-      secret: "secretkey",
-      resave: false,
-      saveUninitialized: false,
-      store: MongoStore.create({
-          client: mongoose.connection.getClient()
-      }),
-      unset: 'destroy'      
-  })
-);
-
 
 // Passport middleware
 app.use(passport.initialize());
@@ -76,6 +63,21 @@ app.use('/api/recipes', recipeRoutes);
 
 //Connect to DB before Server Running
 connectDB().then(() => {
+
+  // Setup Sessions - stored in MongoDB
+  app.use(
+    session({
+        secret: "secretkey",
+        resave: false,
+        saveUninitialized: false,
+        store: MongoStore.create({
+            client: mongoose.connection.getClient()
+        }),
+        unset: 'destroy'      
+    })
+  );
+
+  
   app.listen(process.env.PORT, () => {
       console.log(`Server is running on port ${port}`);
     });
