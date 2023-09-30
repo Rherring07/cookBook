@@ -33,7 +33,7 @@ require("dotenv").config({ path: "./config/.env" });
 app.use(express.static(path.join(__dirname, "../client/dist")));
 app.get("*", function (_, res) {
   res.sendFile(
-    path.join(__dirname, "../client/build/dist"),
+    path.join(__dirname, "../client/dist/index.html"),
     function (err) {
       res.status(500).send(err);
     }
