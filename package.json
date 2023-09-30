@@ -7,7 +7,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js --prefix ./server",
+    "start": "npm run server --prefix ./server",
     "build": "npm run build --prefix ./client"
   },
   "keywords": [],
