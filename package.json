@@ -28,6 +28,7 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
     "jsonwebtoken": "^9.0.0",
+    
     "mongodb": "^4.11.0",
     "mongoose": "^6.7.1",
     "morgan": "^1.10.0",
@@ -35,12 +36,25 @@
     "passport": "^0.5.3",
     "passport-local": "^1.0.0",
     "validator": "^13.7.0",
+
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "dotenv": "^16.0.3",
+    "flash-message": "^2.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "@vitejs/plugin-react": "^2.2.0",
     "autoprefixer": "^10.4.13",
     "sass": "^1.57.1",
     "vite": "^3.2.0"
+    "@types/react": "^18.0.22"
 
   }
 }
