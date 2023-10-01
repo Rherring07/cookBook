@@ -17,7 +17,7 @@ export default defineConfig(({ command, mode }) => {
 
     server: {
       host: true,
-      port : 3000,
+      port : env.PORT,
       proxy: {
         '/api': {
           target: env.VITE_PROXY,
