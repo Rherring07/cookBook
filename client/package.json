@@ -8,7 +8,7 @@
     "start": "vite build",
     "dev": "vite",
     "build": "CI=false vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port 3000"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
