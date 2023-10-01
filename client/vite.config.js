@@ -14,7 +14,7 @@ export default defineConfig(({ command, mode }) => {
     },
     "include": ["src"],
 
-    {
+    
 
     server: {
       host: true,
