@@ -47,19 +47,6 @@ app.use(express.urlencoded({ extended: true }));
 //Logging
 app.use(logger("dev"));
 
-// Setup Sessions - stored in MongoDB
-app.use(
-  session({
-      secret: "secretkey",
-      resave: false,
-      saveUninitialized: false,
-      store: MongoStore.create({
-          client: mongoose.connection.getClient()
-      }),
-      unset: 'destroy'      
-  })
-);
-
 
 // Passport middleware
 app.use(passport.initialize());
