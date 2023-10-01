@@ -29,12 +29,29 @@ const port = process.env.PORT || 5000;
 // Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
 
+// Connect To Database
+connectDB();
+
+
 //Body Parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //Logging
 app.use(logger("dev"));
+
+// Setup Sessions - stored in MongoDB
+app.use(
+  session({
+      secret: "secretkey",
+      resave: false,
+      saveUninitialized: false,
+      store: MongoStore.create({
+          client: mongoose.connection.getClient()
+      }),
+      unset: 'destroy'      
+  })
+);
 
 
 // Passport middleware
@@ -50,24 +67,8 @@ app.use(flash());
 app.use('/api', mainRoutes);
 app.use('/api/recipes', recipeRoutes);
 
-//Connect to DB before Server Running
-connectDB().then(() => {
-  // Setup Sessions - stored in MongoDB
-  app.use(
-    session({
-        secret: "secretkey",
-        resave: false,
-        saveUninitialized: false,
-        store: MongoStore.create({
-            client: mongoose.connection.getClient()
-        }),
-        unset: 'destroy'      
-    })
-  );
-
-  
-  app.listen(process.env.PORT, () => {
-      console.log(`Server is running on port ${port}`);
-    });
-})
+//Server Running
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${port}`);
+  });
   
