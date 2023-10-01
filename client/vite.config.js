@@ -13,7 +13,12 @@ export default defineConfig(({ command, mode }) => {
       "baseUrl": "src"
     },
     "include": ["src"],
-    
+
+    {
+    "scripts": {
+      "preview": "vite preview --port 3000"
+      }
+    }  
 
     server: {
       host: true,
